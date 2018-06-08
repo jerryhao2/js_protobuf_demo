@@ -1,0 +1,47 @@
+{
+  "nested": {
+    "user": {
+      "nested": {
+        "Sex": {
+          "values": {
+            "male": 0,
+            "female": 1
+          }
+        },
+        "LoveGame": {
+          "fields": {
+            "name": {
+              "type": "string",
+              "id": 1
+            },
+            "type": {
+              "type": "string",
+              "id": 2
+            }
+          }
+        },
+        "UserInfo": {
+          "fields": {
+            "name": {
+              "type": "string",
+              "id": 1
+            },
+            "age": {
+              "type": "int32",
+              "id": 2
+            },
+            "game": {
+              "rule": "repeated",
+              "type": "LoveGame",
+              "id": 3
+            },
+            "sex": {
+              "type": "Sex",
+              "id": 4
+            }
+          }
+        }
+      }
+    }
+  }
+}
